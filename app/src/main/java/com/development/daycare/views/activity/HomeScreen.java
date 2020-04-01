@@ -1,6 +1,5 @@
 package com.development.daycare.views.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -9,7 +8,6 @@ import android.os.Bundle;
 
 import com.development.daycare.R;
 import com.development.daycare.databinding.ActivityHomeScreenBinding;
-import com.development.daycare.views.BaseActivity;
 import com.development.daycare.views.fragment.home.HomeFragment;
 
 public class HomeScreen extends BaseActivity {

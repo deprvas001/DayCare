@@ -6,4 +6,20 @@
     <string name="top_stories">TOP STORIES</string>
     <string name="day_care">DAY CARE</string>
     <string name="loading">Please wait</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="password">Password</string>
+    <string name="terms_condition"><![CDATA[I accept the  terms & conditions]]></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_sign">Already registered ? <u><b><font fgcolor='#008577'>Sign in</font></b></u></string>
+    <string name="reconfirm_password">Confirm Password</string>
+    <string name="name_empty">Name field is empty</string>
+    <string name="email_empty">Email field is empty</string>
+    <string name="phone_empty">Phone field is empty</string>
+    <string name="password_empty">Password field is empty</string>
+    <string name="accept_terms">Please accept the terms and condition</string>
+    <string name="not_valid_email">Enter email id not valid.</string>
 </resources>

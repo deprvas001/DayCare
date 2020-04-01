@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.development.daycare.R;
 import com.development.daycare.model.homeModel.MenuList;
+import com.development.daycare.views.activity.signup.SignupScreen;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -31,6 +32,7 @@ public class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.MyView
             super(view);
             title = (TextView) view.findViewById(R.id.title);
             imageView = (ImageView)view.findViewById(R.id.image);
+            viewLayout = (LinearLayout)view.findViewById(R.id.menu_item);
 
         }
     }
@@ -54,11 +56,24 @@ public class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.MyView
         MenuList  menu = menuLists.get(position);
         holder.title.setText(menu.getTitle());
 
+
         Picasso.get()
                 .load(menu.getImage())
            //     *//*  .placeholder(R.drawable.image1)
                  // .error(R.drawable.err)*//*
                 .into(holder.imageView);
+
+        holder.viewLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(menu.getTitle().equalsIgnoreCase("Partner") || menu.getId().equals("9")){
+                    Intent intent = new Intent(context, SignupScreen.class);
+                    context.startActivity(intent);
+                }
+
+                //  context.startActivity(new Intent(context, RoomDetail.class));
+            }
+        });
 
        /* holder.name.setText(featureProperty.getPropertyName());
         holder.rating.setText(featureProperty.getRating());

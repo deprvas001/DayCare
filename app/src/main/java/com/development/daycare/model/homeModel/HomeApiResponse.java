@@ -6,6 +6,7 @@ public class HomeApiResponse {
     private String message;
     private int status;
 
+
     public HomeApiResponse(HomeResponse response) {
         this.response = response;
     }

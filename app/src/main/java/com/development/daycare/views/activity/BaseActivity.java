@@ -1,4 +1,4 @@
-package com.development.daycare.views;
+package com.development.daycare.views.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
