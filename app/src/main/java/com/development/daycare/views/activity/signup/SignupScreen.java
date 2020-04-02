@@ -39,6 +39,7 @@ public class SignupScreen extends BaseActivity implements View.OnClickListener {
 
     private void setClickListener() {
         screenBinding.btnNext.setOnClickListener(this);
+        screenBinding.signIn.setOnClickListener(this);
         contextView = findViewById(android.R.id.content);
     }
 
@@ -70,6 +71,8 @@ public class SignupScreen extends BaseActivity implements View.OnClickListener {
                 Snackbar.make(contextView, getString(R.string.accept_terms), Snackbar.LENGTH_LONG).show();
                 return;
             }
+        }else if(view.getId() == R.id.sign_in){
+               finish();
         }
     }
 

@@ -1,6 +1,9 @@
 package com.development.daycare.networking;
 
+import com.development.daycare.model.forgotModel.ForgotRequestModel;
 import com.development.daycare.model.homeModel.HomeResponse;
+import com.development.daycare.model.loginModel.LoginRequest;
+import com.development.daycare.model.loginModel.LoginResponse;
 import com.development.daycare.model.signupModel.SignUpResponse;
 import com.development.daycare.model.signupModel.UserSignupRequest;
 
@@ -24,4 +27,13 @@ public interface ShipmentApi {
     Call<SignUpResponse> userSignUp(
             @HeaderMap Map<String,String> headers,
             @Body UserSignupRequest request);
+
+    @POST("userLogin")
+    Call<LoginResponse> login(
+            @HeaderMap Map<String,String> headers,
+            @Body LoginRequest request);
+
+    @POST("forgetPassword")
+    Call<LoginResponse> forgotPassword(
+            @Body ForgotRequestModel request);
 }

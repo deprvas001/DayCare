@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:scaleType="fitXY"
+       android:src="@drawable/capture"/>
+
+      <LinearLayout
+          android:id="@+id/address_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/imageView"
+          android:layout_margin="15dp"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textColor="@color/edit_text_color"
+              android:textSize="18sp"
+              android:text="Day Care "/>
+
+
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/fab"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom|end"
+              app:srcCompat="@drawable/ic_location_on_black_24dp" />
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/overview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:text="@string/overview"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:layout_below="@id/address_layout"/>
+
+      <TextView
+          android:id="@+id/overview_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:text="@string/overview_desc"
+          android:textSize="15sp"
+          android:layout_below="@id/overview"/>
+
+      <TextView
+          android:id="@+id/overview_detail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:text="@string/overview"
+          android:textSize="15sp"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/edit_text_color"
+          android:layout_below="@id/overview_desc"/>
+
+      <LinearLayout
+          android:id="@+id/location_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/overview_detail"
+          android:orientation="horizontal">
+          
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginTop="5dp"
+              android:text="Location"
+              android:textStyle="bold"
+              />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginTop="5dp"
+              android:text="Teacher Name"
+              android:textStyle="bold"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_below="@id/location_layout"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Unitech South City"
+              />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Teacher1"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/layout2"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginTop="5dp"
+              android:text="Class"
+              android:textStyle="bold"
+              />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginTop="5dp"
+              android:text="Timing"
+              android:textStyle="bold"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_below="@id/layout3"
+          android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Unitech South City"
+              />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="10:00am"
+              />
+      </LinearLayout>
+  </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

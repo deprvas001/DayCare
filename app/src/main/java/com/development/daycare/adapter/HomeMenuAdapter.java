@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.development.daycare.R;
 import com.development.daycare.model.homeModel.MenuList;
+import com.development.daycare.views.activity.bookmark.Bookmark;
+import com.development.daycare.views.activity.login.LoginScreen;
 import com.development.daycare.views.activity.signup.SignupScreen;
 import com.squareup.picasso.Picasso;
 
@@ -67,7 +69,10 @@ public class HomeMenuAdapter extends RecyclerView.Adapter<HomeMenuAdapter.MyView
             @Override
             public void onClick(View view) {
                 if(menu.getTitle().equalsIgnoreCase("Partner") || menu.getId().equals("9")){
-                    Intent intent = new Intent(context, SignupScreen.class);
+                    Intent intent = new Intent(context, LoginScreen.class);
+                    context.startActivity(intent);
+                }else  if(menu.getTitle().equalsIgnoreCase("Bookmark") || menu.getId().equals("7")){
+                    Intent intent = new Intent(context, Bookmark.class);
                     context.startActivity(intent);
                 }
 

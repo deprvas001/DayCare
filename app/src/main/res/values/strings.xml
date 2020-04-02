@@ -22,4 +22,12 @@
     <string name="password_empty">Password field is empty</string>
     <string name="accept_terms">Please accept the terms and condition</string>
     <string name="not_valid_email">Enter email id not valid.</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user">New User? <u><b><font fgcolor='#008577'>Signup</font></b></u></string>
+    <string name="forgot_password_desc">Enter your email to receive an email to reset your password</string>
+    <string name="send">Send</string>
+    <string name="bookmark">Bookmarks</string>
+    <string name="overview">Overview</string>
+    <string name="overview_desc">Day-care centre, also called day nursery, nursery school, or crèche (French: “crib”), institution that provides supervision and care of infants and young children during the daytime, particularly so that their parents can hold jobs. Such institutions appeared in France about 1840, and the Société des Crèches was recognized by the French government in 1869.</string>
 </resources>
